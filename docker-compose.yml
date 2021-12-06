@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  charts-syncer:
+    restart: always
+    build: ./charts-syncer
+    image: charts-syncer
+    container_name: helm-charts-syncer
+    volumes:
+      - ./charts-syncer-data:/tmp
