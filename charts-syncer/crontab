@@ -1,2 +1,2 @@
-* * * * * /tmp/charts-syncer sync --from-date $(date +%F) >> /var/log/cron.log 2>&1
+* */6 * * * charts-syncer sync --latest-version-only --config /tmp/charts-syncer.yaml
 # Don't remove the empty line at the end of this file. It is required to run the cron job
